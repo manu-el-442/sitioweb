@@ -23,7 +23,7 @@ switch($accion){
 
             if($tmpImagen!=""){
 
-                move_uploaded_file($tmpImagen,"https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/".$nombreArchivo);
+                move_uploaded_file($tmpImagen,"https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros".$nombreArchivo);
             }
 
 
@@ -51,7 +51,7 @@ switch($accion){
                 $nombreArchivo=($txtImagen!="")?$fecha->getTimestamp()."_".$_FILES["txtImagen"]["name"]:"imagen.jpg";
                 $tmpImagen=$_FILES["txtImagen"]["tmp_name"];
 
-                move_uploaded_file($tmpImagen,"https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/".$nombreArchivo);
+                move_uploaded_file($tmpImagen,"https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros".$nombreArchivo);
 
                 $sentenciaSQL= $conexion->prepare("SELECT imagen FROM libros WHERE id=:id");
                 $sentenciaSQL->bindParam(':id',$txtID);
@@ -60,9 +60,9 @@ switch($accion){
 
                 if(isset($libro["imagen"]) &&($libro["imagen"]!="imagen.jpg") ){
 
-                    if(file_exists("https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/".$libro["imagen"])){
+                    if(file_exists("https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros".$libro["imagen"])){
 
-                        unlink("https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/".$libro["imagen"]);
+                        unlink("https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros".$libro["imagen"]);
                     }
 
                 }
@@ -110,9 +110,9 @@ switch($accion){
 
             if(isset($libro["imagen"]) &&($libro["imagen"]!="imagen.jpg") ){
 
-                if(file_exists("https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/".$libro["imagen"])){
+                if(file_exists("https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros".$libro["imagen"])){
 
-                    unlink("https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/".$libro["imagen"]);
+                    unlink("https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros".$libro["imagen"]);
                 }
             }
 
@@ -171,7 +171,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                 <?php
                     if($txtImagen!=""){ ?>
 
-                   <img class="img-thumbnail rounded" src="https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/<?php echo $txtImagen; ?>" width=50"  alt="" srcset="">
+                   <img class="img-thumbnail rounded" src="https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros<?php echo $txtImagen; ?>" width=50"  alt="" srcset="">
            
 
 
@@ -219,7 +219,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                 <td><?php echo $libro['nombre']; ?></td>
                 <td>
 
-                <img class="img-thumbnail rounded" src="https://github.com/manu-el-442/sitioweb/tree/Pagina00/img/<?php echo $libro['imagen']; ?>" width=50"  alt="" srcset="">
+                <img class="img-thumbnail rounded" src="https://github.com/manu-el-442/sitioweb/tree/71796b85c6e56c0251dd5277be4b26359006ae87/administrador/imglibros<?php echo $libro['imagen']; ?>" width=50"  alt="" srcset="">
                     
                 
                 </td>
