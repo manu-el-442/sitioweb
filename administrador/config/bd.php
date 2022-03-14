@@ -1,8 +1,8 @@
 <?php
-$host="ec2-52-70-186-184.compute-1.amazonaws.com";
-$bd="dclrnqocvebv5f";
-$usuario="uebhuwgaruyfei";
-$contrasenia="51ac40294233a4dbad9fce03eaa3a7fcd80d5f463ae23b86bdf7b7fa47beec1f";
+$host="ec2-34-192-83-52.compute-1.amazonaws.com";
+$bd="d2ruqgtokm96jq";
+$usuario="drsykuezxpghgx";
+$contrasenia="fd7f694004bea0b8b3de67fef64f4e9f14ce37283e839872f51a5dae852e6cd1";
 
 try {
     $conexion=new PDO("pgsql:host=$host;dbname=$bd",$usuario,$contrasenia );
