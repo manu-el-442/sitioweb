@@ -141,7 +141,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-    <div class="col-md-5">
+    <div class="col-md-5" style="margin-bottom: 20px;">
 
         <div class="card">
             <div class="card-header">
