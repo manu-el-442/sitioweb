@@ -2,8 +2,9 @@
 
                 <div class="col-md-12">
 
-                 <div class="jumbotron">
-                    <h1 class="display-3">Bienvenido <?php echo $nombreUsuario; ?></h1>
+                 <div class="jumbotron" style="text-align: center; display: grid; place-content: center;">
+                    <h1 class="display-3" style="font-size: 48px;">Bienvenido <?php echo $nombreUsuario; ?></h1>
+                   <br>
                     <p class="lead">Vamos a administrar nuestros libros en el sitio web</p>
                     <hr class="my-2">
                     <p>Más información</p>
