@@ -222,7 +222,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                 
                 </td>
 
-                <td>
+                <td style="display: grid; place-content: center;">
                     
          
 
