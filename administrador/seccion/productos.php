@@ -201,7 +201,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
 
-    <div class="col-md-7">
+    <div class="col-md-7" style="background: url(https://img.lovepik.com/background/20211102/medium/lovepik-snowmobile-mobile-wallpaper-background-image_400723113.jpg);">
 
     <table class="table table-bordered">
         <thead>
