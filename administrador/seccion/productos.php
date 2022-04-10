@@ -201,9 +201,9 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
     </div>
 
-    <div class="col-md-7" style="background: white;">
+    <div class="col-md-7">
 
-    <table class="table table-bordered">
+    <table class="table table-bordered" style="background: white;">
         <thead>
             <tr>
                 <th>ID</th>
