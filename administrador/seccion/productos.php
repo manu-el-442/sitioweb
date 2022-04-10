@@ -171,7 +171,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
                 <?php
                     if($txtImagen!=""){ ?>
 
-                   <img class="img-thumbnail rounded" src="../../img/<?php echo $txtImagen; ?>" width=50"  alt="" srcset="">
+                   <img class="img-thumbnail rounded" src="../../img/<?php echo $txtImagen; ?>" width=100"  alt="" srcset="">
            
 
 
