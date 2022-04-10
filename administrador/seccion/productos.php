@@ -234,7 +234,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
                     <input type="submit" name="accion" value="Seleccionar" class="btn btn-primary" style="border-bottom-width: 1px; margin-bottom: 10px; "/>
 
-                    <input type="submit" name="accion" value="Borrar" class="btn btn-danger"/>
+                    <input type="submit" name="accion" value="Borrar" class="btn btn-danger" style="border-bottom-width: 1px; margin-bottom: 10px; "/>
 
 
 
