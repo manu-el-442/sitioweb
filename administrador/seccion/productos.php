@@ -206,7 +206,6 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
     <table class="table table-bordered" style="background: white;">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Nombre</th>
                 <th>Imagen</th>
                 <th>Acciones</th>
@@ -215,7 +214,6 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
         <tbody>
         <?php foreach($listaLibros as $libro) { ?>
             <tr>
-                <td><?php echo $libro['id']; ?></td>
                 <td><?php echo $libro['nombre']; ?></td>
                 <td>
 
