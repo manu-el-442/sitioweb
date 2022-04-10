@@ -31,7 +31,7 @@ if(!isset($_SESSION['usuario'])){
 
     
   </head>
-  <body>
+  <body style="background-color: darksalmon;">
 
   <?php $url="https://".$_SERVER['HTTP_HOST']."/" ?>
 
