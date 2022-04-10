@@ -232,7 +232,7 @@ $listaLibros=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
                     <input type="hidden" name="txtID" id="txtID" value="<?php echo $libro['id']; ?>"/>
 
-                    <input type="submit" name="accion" value="Seleccionar" class="btn btn-primary" style="border-bottom-width: 1px; margin-bottom: 10px; "/>
+                    <input type="submit" name="accion" value="Seleccionar" class="btn btn-primary" style="border-bottom-width: 1px; margin-bottom: 10px; padding-right: 5px;padding-left: 5px;" "/>
 
                     <input type="submit" name="accion" value="Borrar" class="btn btn-danger" style="border-bottom-width: 1px; margin-bottom: 10px; "/>
 
