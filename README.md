@@ -10,7 +10,7 @@ Actualmente hay una versión anterior del código
 que fue utilizado para resolver problemas de diseño
 y rendimiento del sitio web. Es la primera versión 
 y aún no se ha lanzado una nueva que corrija los
-demás problemas encontrados.
+demás problemas encontrados. v0.1.beta.01
 
 # Acerca de
 Manuel Gallardo, Repositorio con código en
